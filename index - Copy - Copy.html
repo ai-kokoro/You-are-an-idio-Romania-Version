@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head >
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+	<style>
+body{
+	background-color: #222832;
+}
+button{
+	width: 60vw;
+	height: 60vh;
+	background-color: #5F939A;
+	border: none;
+	font-size: 100px;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	position: absolute;
+	left: calc((100vw - 60vw) / 2);
+	top: calc((100vh - 60vh) / 2);
+}
+</style>
+    </head>
+    <body style="overflow: hidden;">
+	<button id="hehe"> Nu mă apăsa</button>
+<!-- hehe -->
+
+	<script>
+let elem = document.documentElement;
+elem.requestFullscreen();
+document.getElementById("hehe").addEventListener('click', function(){
+	for(i = 0, topposition = 0, leftposition = 0; i < 75; i++){
+	topposition += 0;
+	leftposition += 50;
+if(i == 25 || i == 50 || i == 75)
+	topposition += 100;
+ 
+	window.open(document.URL, '_blank', `window.open(document.URL, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes, menubar=0, statusbar=0, left=${leftposition}');`);
+}
+});
+
+</script>
+    </body>
+</html>
